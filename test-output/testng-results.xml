@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="QA Automation case suite" duration-ms="32267" started-at="2018-02-06T22:05:29Z" finished-at="2018-02-06T22:06:01Z">
+    <groups>
+      <group name="Critical">
+        <method signature="SendAMail.testUntitled()[pri:0, instance:usBelarItGroupTestCase.SendAMail@5c3bd550]" name="testUntitled" class="usBelarItGroupTestCase.SendAMail"/>
+      </group> <!-- Critical -->
+    </groups>
+    <test name="Set All" duration-ms="32267" started-at="2018-02-06T22:05:29Z" finished-at="2018-02-06T22:06:01Z">
+      <class name="usBelarItGroupTestCase.SendAMail">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:usBelarItGroupTestCase.SendAMail@5c3bd550]" name="setUp" is-config="true" duration-ms="3964" started-at="2018-02-07T00:05:29Z" finished-at="2018-02-07T00:05:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUpPage()[pri:0, instance:usBelarItGroupTestCase.SendAMail@5c3bd550]" name="setUpPage" is-config="true" duration-ms="42" started-at="2018-02-07T00:05:33Z" finished-at="2018-02-07T00:05:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:usBelarItGroupTestCase.SendAMail@5c3bd550]" name="testUntitled" duration-ms="23773" started-at="2018-02-07T00:05:33Z" finished-at="2018-02-07T00:05:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled -->
+        <test-method status="PASS" signature="tearDownLogin()[pri:0, instance:usBelarItGroupTestCase.SendAMail@5c3bd550]" name="tearDownLogin" is-config="true" duration-ms="3747" started-at="2018-02-07T00:05:57Z" finished-at="2018-02-07T00:06:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:usBelarItGroupTestCase.SendAMail@5c3bd550]" name="tearDown" is-config="true" duration-ms="707" started-at="2018-02-07T00:06:01Z" finished-at="2018-02-07T00:06:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- usBelarItGroupTestCase.SendAMail -->
+    </test> <!-- Set All -->
+  </suite> <!-- QA Automation case suite -->
+</testng-results>

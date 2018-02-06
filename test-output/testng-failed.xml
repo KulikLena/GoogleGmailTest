@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [QA Automation case suite]">
+  <test name="Set All(failed)">
+    <classes>
+      <class name="usBelarItGroupTestCase.SendAMail">
+        <methods>
+          <include name="tearDownLogin"/>
+          <include name="testUntitled"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setUpPage"/>
+        </methods>
+      </class> <!-- usBelarItGroupTestCase.SendAMail -->
+    </classes>
+  </test> <!-- Set All(failed) -->
+</suite> <!-- Failed suite [QA Automation case suite] -->
