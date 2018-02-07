@@ -7,7 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class MailPage {
 	private final WebDriver dr;
-
+	
 	public MailPage(WebDriver dr) {
 		this.dr = dr;
 	}

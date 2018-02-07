@@ -3,13 +3,10 @@ package usBelarItGroupTestCase;
 import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import static org.testng.Assert.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.opera.OperaDriver;
@@ -34,20 +31,19 @@ public class SendAMail {
 		driverOpera.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
-	@Test (groups = "Critical")
-	public void testUntitled() throws Exception {
+	@Test(dataProvider = "myData", dataProviderClass = LoginData.class)
+	public void sendAMail(TestLoginParametr parameterObject) throws Exception {
 		driverOpera.get(Parametrs.baseUrl);
-		HelpMethods.insertNamePassword(Parametrs.email, Parametrs.password, driverOpera);
+
+		HelpMethods.insertNamePassword(parameterObject.login, parameterObject.passwword, driverOpera);
 
 		pageObj.sendMail(driverOpera, Parametrs.addressee, Parametrs.text);
 
 		pageObj.checkMail(driverOpera);
 
-		//read.sleep(3000);
-
 		pageObj.deleteMail(driverOpera);
 
-			}
+	}
 
 	@AfterClass
 	public void tearDownLogin() {
